@@ -1,2 +1,2 @@
 # learning Bootstrap
-# learning-boostrap
+## dealing with some basics topics on bootstarp
