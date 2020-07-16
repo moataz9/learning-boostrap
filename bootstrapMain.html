@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta description="" />
+    <meta keywords="" />
+    <title>learning bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body {
+        height: 10000px;
+      }
+
+      [class^='col '],
+      [class^='col-'] {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row row-cols-6">
+        <div class="col border">1</div>
+        <div class="col border">2</div>
+        <div class="col border">3</div>
+        <div class="col border">4</div>
+        <div class="col border">5</div>
+        <div class="col border">6</div>
+        <div class="col border">7</div>
+        <div class="col border">8</div>
+        <div class="col border">9</div>
+        <div class="col border">10</div>
+        <div class="col border">11</div>
+        <div class="col border">12</div>
+        <div class="col border">13</div>
+        <div class="col border">14</div>
+        <div class="col border">15</div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam itaque dolorum!
+        Assumenda cumque velit quae minus quis natus recusandae iste? Eligendi quod corrupti harum
+        doloribus eveniet facere facilis quis asperiores dolorem quaerat id earum ut adipisci,
+        veniam temporibus. Aut quidem vel, maiores nemo aliquam porro dolores enim cupiditate a,
+        nulla sint. Officiis, laboriosam! Adipisci sunt quia cum id impedit expedita commodi nulla
+        consequuntur repudiandae, tenetur architecto, illo labore odit laborum, dolorum fugiat nobis
+        odio ducimus suscipit distinctio tempora? Deserunt qui mollitia vel, voluptatem voluptatibus
+        in sint excepturi dolores beatae.
+      </p>
+      <div class="badge badge-primary text-wrap" style="width: 6rem;">
+        This text should wrap.
+      </div>
+      <!-- Block level -->
+      <div class="row">
+        <div class="col-3 text-truncate">
+          Praeterea iter est quasdam res quas ex communi.
+        </div>
+      </div>
+      <!-- Inline level -->
+      <span class="d-inline-block text-truncate" style="max-width: 150px;">
+        Praeterea iter est quasdam res quas ex communi.
+      </span>
+      <p class="text-break">
+        mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+      </p>
+      <p class="text-monospace">This is in monospace</p>
+      <a href="#" class="text-decoration-none text-reset">Non-underlined link</a>
+      <p class="text-muted">Muted text with a <a href="#" class="text-reset">reset link</a>.</p>
+
+      <div class="bg-info clearfix">
+        <button type="button" class="btn btn-secondary float-left">
+          Example Button floated left
+        </button>
+        <button type="button" class="btn btn-secondary float-right">
+          Example Button floated right
+        </button>
+        <button type="button" class="btn btn-secondary float-right">
+          Example Button floated right
+        </button>
+      </div>
+      <div class="bg-danger clearfix mt-1">
+        <button type="button" class="btn btn-secondary float-left">
+          Example Button floated left
+        </button>
+        <button type="button" class="btn btn-secondary float-right">
+          Example Button floated right
+        </button>
+      </div>
+      <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <span class="border align-baseline">Baseline</span>
+      <span class="border align-top">top</span>
+      <span class="border align-middle">middle</span>
+      <span class="border align-bottom">bottom</span>
+      <span class="border align-text-top">text-top</span>
+      <span class="border align-text-bottom">text-bottom</span>
+    </div>
+
+    <div class="container border-top mt-5">
+      <table style="height: 100px;">
+        <thead>
+          <tr>
+            <td>baseline</td>
+            <td>top</td>
+            <td>middle</td>
+            <td>bottom</td>
+            <td>text-top</td>
+            <td>text-bottom</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border align-baseline">baseline</td>
+            <td class="border align-top">top</td>
+            <td class="border align-middle">middle</td>
+            <td class="border align-bottom">bottom</td>
+            <td class="border align-text-top">text-top</td>
+            <td class="border align-text-bottom">text-bottom</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- 
+    <div class="container">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://via.placeholder.com/400/09f/fff"
+          class="card-img-top"
+          alt="card-image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card with stretched link</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- 
+    <div class="container mt-2">
+      <div class="media position-relative border border-primary">
+        <img
+          src="https://via.placeholder.com/400/09f/fff.png"
+          class="mr-3"
+          alt="..."
+        />
+        <div class="media-body">
+          <h5 class="mt-0">Media with stretched link</h5>
+          <p class="mr-3 text-justify">
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+            vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+
+      <div
+        class="row no-gutters bg-light position-relative border border-primary mt-3"
+      >
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img
+            src="https://via.placeholder.com/400/09f/fff"
+            class="w-100"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+            vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card border border-primary mt-3" style="width: 18rem;">
+        <img
+          src="https://via.placeholder.com/300/09f/fff"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card with stretched links</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <p class="card-text">
+            <a
+              href="#"
+              class="stretched-link text-danger"
+              style="position: relative;"
+              >Stretched link will not work here, because
+              <code>position: relative</code> is added to the link</a
+            >
+          </p>
+
+          <p class="card-text bg-light" style="transform: rotate(0);">
+            This
+            <a href="#" class="text-warning stretched-link">stretched link</a>
+            will only be spread over the <code>p</code>-tag, because a transform
+            is applied to it.
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container mt-3">
+      <div class="alert alert-primary">
+        this is a primary with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+      <div class="alert alert-danger">
+        this is a danger with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+      <div class="alert alert-info">
+        this is a info with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+      <div class="alert alert-secondary">
+        this is a secondary with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+      <div class="alert alert-success">
+        this is a success with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+      <div class="alert alert-warning">
+        this is a warning with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+      <div class="alert alert-light">
+        this is a light with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+      <div class="alert alert-dark">
+        this is a dark with
+        <a href="#" class="alert-link">an example</a> alart-check it out!
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>
+          Aww yeah, you successfully read this impotant alert message. this example text is going to
+          run a longer so that you can see how spacing within an alert works with an alert works
+          with this kind of content
+        </p>
+        <hr />
+        <p class="mb-0">
+          whenever you need to, be sure to use margin utilites to keep thing nice and tindy.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> you should check in on some of these fileds blow.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <button class="btn btn-primary" type="button">
+        Profile <span class="badge badge-light">9</span>
+        <span class="sr-only">unreaded messages</span>
+      </button>
+      <hr />
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h3 class="text-center font-weight-bold">Buttons</h3>
+      <button class="btn btn-primary">Primary btn-primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-link">link</button>
+      <hr />
+      <a href="#" class="btn btn-primary" role="button">link</a>
+      <button class="btn btn-primary" type="button">Button</button>
+      <input class="btn btn-primary" type="button" value="Input" />
+      <input class="btn btn-primary" type="submit" value="Submit" />
+      <input class="btn btn-primary" type="reset" value="Reset" />
+      <hr />
+      <button class="btn btn-outline-primary">Primary</button>
+      <button class="btn btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Success</button>
+      <button class="btn btn-outline-danger">Danger</button>
+      <button class="btn btn-outline-warning">Warning</button>
+      <button class="btn btn-outline-info">Info</button>
+      <button class="btn btn-outline-light">Light</button>
+      <button class="btn btn-outline-dark">Dark</button>
+      <hr />
+      <button class="btn btn-primary btn-lg" type="button">
+        this is large button
+      </button>
+      <button class="btn btn-secondary btn-lg" type="button">
+        this is large button
+      </button>
+      <hr />
+      <button type="button" class="btn btn-primary btn-sm">Small button</button>
+      <button type="button" class="btn btn-secondary btn-sm">
+        Small button
+      </button>
+      <hr />
+      <button class="btn btn-primary btn-lg btn-block" type="button">
+        this is large button
+      </button>
+      <button class="btn btn-secondary btn-lg btn-block" type="button">
+        this is large button
+      </button>
+      <hr />
+      <button class="btn btn-primary btn-lg" disabled="disabled" type="button">
+        Primary
+      </button>
+      <button class="btn btn-secondary btn-lg" disabled="disabled" type="button">
+        Secondary
+      </button>
+      <hr />
+      <a
+        href="#"
+        class="btn btn-primary btn-lg disabled"
+        tabindex="-1"
+        role="button"
+        aria-disabled="true"
+        >Primary</a
+      >
+      <a
+        href="#"
+        class="btn btn-secondary btn-lg disabled"
+        tabindex="-1"
+        role="button"
+        aria-disabled="true"
+        >Secondary</a
+      >
+      <hr />
+      <button class="btn btn-primary" type="button" data-toggle="button" aria-pressed="false">
+        Single toggle
+      </button>
+      <hr />
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active"> <input type="checkbox" checked /> Checked </label>
+      </div>
+      <hr />
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" checked /> Active
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" /> Radio
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" /> Radio
+        </label>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3 class="text-center">button group</h3>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button class="btn btn-secondary" type="button">left</button>
+        <button class="btn btn-secondary" type="button">middle</button>
+        <button class="btn btn-secondary" type="button">right</button>
+      </div>
+      <hr />
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-secondary">1</button>
+          <button type="button" class="btn btn-secondary">2</button>
+          <button type="button" class="btn btn-secondary">3</button>
+          <button type="button" class="btn btn-secondary">4</button>
+        </div>
+        <div class="btn-group mx-1" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-primary">5</button>
+          <button type="button" class="btn btn-primary">6</button>
+          <button type="button" class="btn btn-primary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+          <button type="button" class="btn btn-success">8</button>
+        </div>
+      </div>
+      <hr />
+      <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with Button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-secondary">1</button>
+          <button type="button" class="btn btn-secondary">2</button>
+          <button type="button" class="btn btn-secondary">3</button>
+          <button type="button" class="btn btn-secondary">4</button>
+        </div>
+        <div class="input-group">
+          <div class="input-group-append">
+            <div class="input-group-text" id="btnGroupAddon">@</div>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="input group example"
+            aria-label="Input group example"
+            aria-describedby="btnGroupAddon"
+          />
+        </div>
+      </div>
+
+      <div
+        class="btn-toolbar justify-content-between"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <div class="btn-group" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-secondary">1</button>
+          <button type="button" class="btn btn-secondary">2</button>
+          <button type="button" class="btn btn-secondary">3</button>
+          <button type="button" class="btn btn-secondary">4</button>
+        </div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="btnGroupAddon2">@</div>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Input group example"
+            aria-label="Input group example"
+            aria-describedby="btnGroupAddon2"
+          />
+        </div>
+      </div>
+      <hr />
+      <!--  -->
+      <div class="btn-group" role="group" aria-label="Buttons group with nested dropdown">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+
+        <div class="btn-group" role="group">
+          <button
+            id="btnGroupDrop1"
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            DropDown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link 1</a>
+            <a class="dropdown-item" href="#">Dropdown link 2</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!--  -->
+      <div class="btn-group-vertical" role="group" aria-label="Buttons group with nested dropdown">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+
+        <div class="btn-group" role="group">
+          <button
+            id="btnGroupDrop1"
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            DropDown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link 1</a>
+            <a class="dropdown-item" href="#">Dropdown link 2</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!--  -->
+      <div
+        class="btn-group-vertical"
+        role="group"
+        aria-label="Buttons vertical group with nested dropdown"
+      >
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+        <div class="btn-group" role="group">
+          <button
+            id="btnGroupDrop2"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            dropdown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+            <a class="dropdown-item" href="#">Dropdown link 1</a>
+            <a class="dropdown-item" href="#">Dropdown link 2</a>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+        <div class="btn-group" role="group">
+          <button
+            id="btnGroupDrop2"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            dropdown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+            <a class="dropdown-item" href="#">Dropdown link 1</a>
+            <a class="dropdown-item" href="#">Dropdown link 2</a>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <!-- example one -->
+      <p>
+        <a
+          href="#collapse"
+          class="btn btn-danger"
+          data-toggle="collapse"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapse"
+        >
+          link with href
+        </a>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapse"
+          aria-expanded="false"
+          aria-controls="collapse"
+        >
+          Button with data-target
+        </button>
+      </p>
+      <div class="collapse" id="collapse">
+        <div class="card card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum doloribus veritatis nam
+          porro harum.
+        </div>
+      </div>
+      <hr />
+      <!-- example two Multiple target -->
+      <p>
+        <a
+          class="btn btn-primary"
+          data-toggle="collapse"
+          href="#multiCollapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1"
+        >
+          Toggle first element
+        </a>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#multiCollapseExample2"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample2"
+        >
+          Toggle second element
+        </button>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target=".multi-collapse"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1 multiCollapseExample2"
+        >
+          Toggle both elements
+        </button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+              ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+              sapiente ea proident.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+              ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+              sapiente ea proident.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- example three: accordion -->
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Collapsible Group Item #1
+              </button>
+            </h2>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+              ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+              it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+              sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Collapsible Group Item #2
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+              ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+              it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+              sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Collapsible Group Item #3
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+              ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+              it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+              sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper@1.16.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

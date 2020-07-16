@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousal bootstarp</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper@1.16.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="carousalSildeonly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
+      <ol class="carousel-indicators">
+        <li data-target="#carousalSildeonly" data-slide-to="0" class="active"></li>
+        <li data-target="#carousalSildeonly" data-slide-to="1"></li>
+        <li data-target="#carousalSildeonly" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+          <img src="images/first-slide.png" alt="" class="d-block w-100" />
+          <div class="carousel-caption">
+            <h5>first slide label</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, temporibus?</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="5000">
+          <img src="images/second-slide.png" alt="" class="d-block w-100" />
+          <div class="carousel-caption">
+            <h5>second slide label</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, ut.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <img src="images/thired-slide.png" alt="" class="d-block w-100" />
+          <div class="carousel-caption">
+            <h5>third slide label</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, veniam?</p>
+          </div>
+        </div>
+      </div>
+      <a href="#carousalSildeonly" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">previous</span>
+      </a>
+      <a href="#carousalSildeonly" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">next</span>
+      </a>
+    </div>
+  </body>
+</html>
